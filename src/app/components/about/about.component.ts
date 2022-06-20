@@ -34,6 +34,6 @@ export class AboutComponent implements OnInit {
   }
 
   change(){
-    this.router.navigate(['/about/deneme/1'])
+    this.router.navigate(['/about','seval' ,'5'], {queryParams:{value:'1',value2:'2',canLoad:true},fragment:'search'})
   }
 }
