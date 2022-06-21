@@ -18,4 +18,20 @@ export class UserService{
         const user=this.users.filter(user => user.id === id)
         return user[0]
       }
+
+      updateUser(id:number,name:string, lastName:string):boolean{
+       
+        try{
+            const user=this.users.filter(user => user.id === id)[0]
+            const index=this.users.indexOf(user);
+            this.users[index].name=name;
+            this.users[index].lastName=lastName;
+            return true
+        }
+        catch{
+            console.log('bir hata olustu')
+            return false
+        }
+
+      }
 }
