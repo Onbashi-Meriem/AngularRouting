@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserEditComponent } from './components/users/user-edit/user-edit.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserEditComponent } from './components/users/user-edit/user-edit.compon
     ContactComponent,
     HomeComponent,
     UsersComponent,
-    UserEditComponent
+    UserEditComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

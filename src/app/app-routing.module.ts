@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { UserEditComponent } from './components/users/user-edit/user-edit.component';
 import { UsersComponent } from './components/users/users.component';
 
@@ -17,6 +18,8 @@ const routes: Routes = [
     component: UsersComponent,
     children: [{ path: ':id', component: UserEditComponent }],
   },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', redirectTo: 'not-found' },
 ];
 
 @NgModule({
